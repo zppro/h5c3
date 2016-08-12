@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        style.
+            h1:before{content:counter(h1c) '. ' open-quote;}
+            h1{counter-increment: h1c;counter-reset:h2c;quotes: '(' ')as'}
+            h1:after {content:close-quote;}
+            h2:before {content: counter(h2c) '. ';margin-left:40px;}
+            h2 {counter-increment: h2c;counter-reset:h3c}
+            h3:before {content: counter(h3c) '. ';}
+            h3 {counter-increment: h3c;margin-left:80px;}
+    body
+        h1 大标题123434333
+        h2 中标题1243
+        h3 小标题12
+        h3 小标题1
+        h2 中标题2
+        h3 小标题12
+        h3 小标题121221
+        h1 大标题
+        h2 中标题
+        h3 小标题
+        h3 小标题
+        h2 中标题
+        h3 小标题
+        h3 小标题abc
