@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        style.
+            html{
+                font-size:10px;
+            }
+            div#div1{
+                width:50%;
+                column-count: 3;
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                font-size: 1.2rem;
+                padding: 20px;
+
+            }
+            div#div1 > img{
+                width:240px;
+            }
+            div#div2{
+                font-size:1.4rem;
+                padding:10px;
+                width:100%;
+                height:200px;
+                background-color: orange;
+            }
+    body
+        div#div1
+            img(src="../img/webpack.jpg")
+            p webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。webpack 的优势
+            | 1. webpack 是以 commonJS 的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
+            | 2. 能被模块化的不仅仅是 JS 了。
+            | 3. 开发便捷，能替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转base64等。
+            | 4. 扩展性强，插件机制完善，特别是支持 React 热插拔（见 react-hot-loader ）的功能让人眼前一亮。
+        div#div2
+            p 建议去扫 Webpack 的文档, 还有很多功能没涉及到..
+            | http://webpack.github.io/docs/

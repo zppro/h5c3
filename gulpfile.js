@@ -21,7 +21,9 @@ var pub_root = './pub-dev/';
 
 var paths = {
     src_jade: src_root + 'jade/**/*.jade',
-    pub_jade: pub_root + 'views/'
+    pub_jade: pub_root + 'views/',
+    src_img:src_root +'img/**/*',
+    pub_img: pub_root + 'img/',
 };
 
 //---------------
@@ -33,6 +35,7 @@ gulp.task('watch', function() {
 
     $plugins.livereload.listen();
     gulp.watch(paths.src_jade, ['jade']);
+    gulp.watch(paths.src_img, ['img']);
 
 });
 
@@ -48,8 +51,19 @@ gulp.task('jade', function() {
         ;
 });
 
+// IMAGE
+gulp.task('img', function() {
+    log('Building images.. ');
+
+    return gulp.src(paths.src_img)
+        .pipe(gulp.dest(paths.pub_img))
+        .pipe($plugins.livereload())
+        ;
+});
+
 gulp.task('dev', gulpsync.sync([
     'jade',
+    'img',
     'watch'
 ]), function(){
     log('Starting dev...');
