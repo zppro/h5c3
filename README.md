@@ -9,5 +9,8 @@ npm/cnpm install h5c3
 ## Index
 
 1. [c3-counter](#demo-c3-counter)
+1. [c3-column-layout](#demo-c3-column-layout)
 
 ## demo-c3-counter: ([source](https://github.com/zppro/h5c3/blob/master/src/jade/c3-counter.jade))
+
+## demo-c3-column-layout: ([source](https://github.com/zppro/h5c3/blob/master/src/jade/c3-column-layout.jade))
