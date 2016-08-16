@@ -14,9 +14,9 @@ in browser 127.0.0.1:8081
 
 ## Index
 
-1. [c3-counter](#demo-c3-counter)
-2. [c3-column-layout](#demo-c3-column-layout)
-3. [c3-flex-layout](#demo-c3-flex-layout)
+1. [c3-counter](#demo-c3-counter-source)
+2. [c3-column-layout](#demo-c3-column-layout-source)
+3. [c3-flex-layout](#demo-c3-flex-layout-source)
 
 ## demo-c3-counter: ([source](https://github.com/zppro/h5c3/blob/master/src/jade/c3-counter.jade))
 
