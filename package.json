@@ -1,12 +1,12 @@
 {
   "name": "h5c3",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "my html5 & css3 demo project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "start":"cd ./pub-dev/views/ && http-server -a 0.0.0.0 -p 8081"
+    "start":"cd ./pub-dev/ && http-server -a 0.0.0.0 -p 8081"
   },
   "keywords": [
     "html5",

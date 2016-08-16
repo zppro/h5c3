@@ -1,0 +1,75 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        style.
+            html{
+                font-size:62.5%;
+            }
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+            #header {
+                width:100%;
+                padding: 10px;
+                position: fixed;
+                height: 50px;
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+                background-color: darkgrey;
+                box-shadow: 0 0 4px gray;
+            }
+            #container{
+                display: flex;
+                padding-top:70px;
+            }
+            #left-sidebar {
+                width:200px;
+                background-color: orange;
+            }
+            #content {
+                flex: 1;
+                background-color: yellow;
+                height: 500px;
+            }
+            #right-sidebar {
+                width:200px;
+                background-color: limegreen;
+            }
+            #left-sidebar,#content,#right-sidebar {
+                padding:20px;
+                font-size:1.6rem;
+                box-sizing: border-box;
+            }
+    body
+        #header
+                h2 这个是头部
+        #container
+            #left-sidebar
+                h2 左边栏
+                ul
+                    li
+                        a 超链接
+                    li
+                        a 超链接
+                    li
+                        a 超链接
+                    li
+                        a 超链接
+                    li
+                        a 超链接
+            #content
+                h2 内容
+                p 2009年，W3C提出了一种新的方案----Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。
+                | Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
+            #right-sidebar
+                h2 右边栏
+                    ul
+                        li
+                            a 超链接
+                        li
+                            a 超链接
+                        li
+                            a 超链接
